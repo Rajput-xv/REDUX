@@ -1,15 +1,16 @@
 import React,{useState} from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { addTodo } from '../fetures/todo/todoSlice';
 
 function AddTodo(){
 
     const [text, setText] = useState('');
     const dispatch = useDispatch();
+    const userName = useSelector(state => state.user.user);
 
     const addTodoHandler = (e) =>{
         e.preventDefault();
-        dispatch(addTodo(text));
+        dispatch(addTodo({ text, user: userName }));
         setText('');
     }
 
