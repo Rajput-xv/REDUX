@@ -1,7 +1,7 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { removeUser } from "../fetures/user/userSlice";
-import { clearTodosByUser } from "../fetures/todo/todoSlice";
+import { removeUser } from "../../fetures/user/userSlice";
+import { clearTodosByUser } from "../../fetures/todo/todoSlice";
 
 function RemoveUser() {
   const dispatch = useDispatch();

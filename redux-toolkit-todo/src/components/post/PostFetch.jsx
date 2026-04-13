@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchPosts } from '../fetures/post/postSlics';
+import { fetchPosts } from '../../fetures/post/postSlics';
 
 function PostFetch() {
     const dispatch = useDispatch();

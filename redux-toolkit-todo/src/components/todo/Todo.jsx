@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { deleteTodo } from '../fetures/todo/todoSlice';
+import { deleteTodo } from '../../fetures/todo/todoSlice';
 
 function Todo(){
     

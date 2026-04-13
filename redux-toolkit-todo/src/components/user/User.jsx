@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { setUser } from '../fetures/user/userSlice';
+import { setUser } from '../../fetures/user/userSlice';
 
 function User(){
 
