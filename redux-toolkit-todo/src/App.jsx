@@ -8,6 +8,7 @@ import AddTodo from './components/AddTodo'
 import User from './components/User'
 import { useSelector } from 'react-redux';
 import RemoveUser from './components/RemoveUser';
+import PostFetch from './components/PostFetch';
 
 function App() {
   const userName = useSelector(state => state.user.user);
@@ -24,6 +25,7 @@ function App() {
             <AddTodo />
             <Todo />
             <RemoveUser/>
+            <PostFetch /> {/* Async thunk example */}
           </>
         )}
     </>
