@@ -2,7 +2,7 @@ import React,{useState} from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { setUser } from '../../fetures/user/userSlice';
 
-function User(){
+function AddUser(){
 
     const user = useSelector(state => state.user.user);
     const dispatch = useDispatch();
@@ -32,4 +32,4 @@ function User(){
     )
 }
 
-export default User;
+export default AddUser;

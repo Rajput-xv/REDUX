@@ -23,7 +23,13 @@ const initialState = {
 export const postSlice = createSlice({
     name: 'post',
     initialState,
-    reducers: {},
+    reducers: {
+        clearPosts: (state) => {
+            state.posts = [];
+            state.loading = false;
+            state.error = null;
+        }
+    },
     extraReducers: (builder) => {
         builder
             .addCase(fetchPosts.pending, (state) => {
@@ -40,5 +46,7 @@ export const postSlice = createSlice({
             });
     }
 });
+
+export const { clearPosts } = postSlice.actions;
 
 export default postSlice.reducer;
